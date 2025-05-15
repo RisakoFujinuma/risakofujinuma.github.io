@@ -248,6 +248,8 @@ img {
 }
 .home-container .home-content .home-data-title {
   font-size: var(--big-font-size);
+  font-family: 'Learning Curve', cursive;
+  font-weight: 500;
 }
 .home-container .home-content .home-data-subtitle {
   color: var(--text-color);
