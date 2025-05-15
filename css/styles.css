@@ -156,7 +156,10 @@ img {
   max-width: 968px;
   height: var(--header-height);
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+.header .nav-menu {
+  margin-left: auto;
 }
 .header .nav-menu .active-link {
   color: var(--first-color);
@@ -164,17 +167,24 @@ img {
 .header .nav-menu.show-menu {
   bottom: 0;
 }
-.header .nav-logo, .header .nav-toggle {
+.header .nav-logo {
   color: var(--title-color);
   font-size: 1.5rem;
   font-weight: var(--font-medium);
+  margin-right: auto;
 }
-.header .nav-logo:hover, .header .nav-toggle:hover {
+.header .nav-logo:hover {
   color: var(--first-color);
 }
 .header .nav-toggle {
-  font-size: 1.2rem;
+  color: var(--title-color);
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
   cursor: pointer;
+  margin-left: 1rem;
+}
+.header .nav-toggle:hover {
+  color: var(--first-color);
 }
 .header .nav-list {
   grid-template-columns: repeat(3, 1fr);
