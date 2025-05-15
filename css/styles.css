@@ -242,7 +242,7 @@ img {
   color: var(--first-color-alt);
 }
 .home-container .home-content .home-data {
-  text-align: center;
+  text-align: left;
 }
 .home-container .home-content .home-data-title {
   font-size: var(--big-font-size);
