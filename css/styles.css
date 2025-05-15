@@ -222,7 +222,6 @@ img {
 .home-container {
   gap: 1rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--text-color);
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -232,6 +231,8 @@ img {
   align-items: center;
   padding-top: 1.5rem;
   width: 100%;
+  border-bottom: 1px solid #900603;
+  padding-bottom: 2rem;
 }
 .home-image {
   width: 100%;
