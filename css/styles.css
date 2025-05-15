@@ -240,12 +240,15 @@ img {
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 .home-package-img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 .home-container .home-content .home-social {
   display: grid;
