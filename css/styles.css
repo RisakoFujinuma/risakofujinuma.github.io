@@ -3,15 +3,15 @@
   --header-height: 3rem;
   /* Colors */
   --hue-color: 100;
-  --first-color: #acd38d;
-  --first-color-second: #9bc47d;
-  --first-color-alt: #8bb56d;
-  --first-color-lighter: #7ba65d;
-  --title-color: #900603;
-  --text-color: #900603;
-  --text-color-light: #900603;
+  --first-color: #900603;
+  --first-color-second: #900603;
+  --first-color-alt: #900603;
+  --first-color-lighter: #900603;
+  --title-color: #000000;
+  --text-color: #000000;
+  --text-color-light: #000000;
   --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: #f1e9de;
+  --body-color: #f8f4ed;
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
