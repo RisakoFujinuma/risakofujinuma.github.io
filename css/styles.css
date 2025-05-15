@@ -7,9 +7,9 @@
   --first-color-second: #9bc47d;
   --first-color-alt: #8bb56d;
   --first-color-lighter: #7ba65d;
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --title-color: #900603;
+  --text-color: #900603;
+  --text-color-light: #900603;
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: #f1e9de;
   --container-color: #fff;
