@@ -171,7 +171,7 @@ img {
 }
 .header .nav-logo {
   color: var(--title-color);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: var(--font-medium);
 }
 .header .nav-logo:hover {
