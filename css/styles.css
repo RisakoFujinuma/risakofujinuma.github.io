@@ -224,22 +224,27 @@ img {
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--text-color);
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .home-container .home-content {
   grid-template-columns: 1fr;
   align-items: center;
   padding-top: 1.5rem;
+  width: 100%;
 }
 .home-image {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .home-package-img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .home-container .home-content .home-social {
   display: grid;
