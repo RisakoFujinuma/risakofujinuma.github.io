@@ -2,11 +2,11 @@
 :root {
   --header-height: 3rem;
   /* Colors */
-  --hue-color: 169;
-  --first-color: hsl(var(--hue-color), 26%, 75%);
-  --first-color-second: hsl(166, 30%, 56%);
-  --first-color-alt: hsl(167, 43%, 64%);
-  --first-color-lighter: hsl(167, 13%, 43%);
+  --hue-color: 100;
+  --first-color: #acd38d;
+  --first-color-second: #9bc47d;
+  --first-color-alt: #8bb56d;
+  --first-color-lighter: #7ba65d;
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
