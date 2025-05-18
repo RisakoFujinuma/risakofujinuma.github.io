@@ -243,10 +243,16 @@ img {
   width: 100%;
   flex-wrap: wrap;
 }
-.home-package-img {
+.home-image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   width: 30%;
   max-width: 400px;
   min-width: 300px;
+}
+.home-package-img {
+  width: 100%;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
