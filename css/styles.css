@@ -245,7 +245,8 @@ img {
 }
 .home-package-img {
   width: 30%;
-  max-width: 300px;
+  max-width: 400px;
+  min-width: 300px;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
