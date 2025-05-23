@@ -247,6 +247,7 @@ img {
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 .home-package-img {
   width: 30%;
@@ -255,7 +256,7 @@ img {
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  object-fit: contain;
 }
 .home-container .home-content .home-social {
   display: grid;
