@@ -283,9 +283,11 @@ img {
   margin-bottom: var(--mb-0-75);
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  letter-spacing: 3px;
 }
 .home-container .home-content .home-data-description {
   margin-bottom: var(--mb-2);
+  letter-spacing: 3px;
 }
 .home-container .home-scroll {
   display: none;
