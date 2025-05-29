@@ -170,22 +170,22 @@ img {
   bottom: 0;
 }
 .header .nav-logo {
-  color: var(--title-color);
+  color: #fff;
   font-size: 1.3rem;
   font-weight: var(--font-medium);
 }
 .header .nav-logo:hover {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 .header .nav-toggle {
-  color: var(--title-color);
+  color: #fff;
   font-size: 1.5rem;
   font-weight: var(--font-medium);
   cursor: pointer;
   margin-left: 1rem;
 }
 .header .nav-toggle:hover {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 .header .nav-list {
   grid-template-columns: repeat(3, 1fr);
@@ -195,7 +195,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--title-color);
+  color: #fff;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   transition: 0.3s;
@@ -210,7 +210,7 @@ img {
   position: absolute;
   right: 1.5rem;
   bottom: 0.7rem;
-  color: var(--first-color);
+  color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -219,6 +219,11 @@ img {
 }
 
 /* Home */
+.home.section {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
 .home-container {
   gap: 1rem;
   padding-bottom: 2rem;
@@ -277,7 +282,7 @@ img {
   margin-bottom: 2rem;
 }
 .home-container .home-content .home-social-icon {
-  color: var(--first-color);
+  color: #fff;
   font-size: 1.25rem;
 }
 .home-container .home-content .home-social-icon:hover {
@@ -287,16 +292,18 @@ img {
   text-align: left;
 }
 .home-container .home-content .home-data-title {
+  color: #fff;
   font-size: var(--big-font-size);
 }
 .home-container .home-content .home-data-subtitle {
-  color: var(--text-color);
+  color: #fff;
   margin-bottom: var(--mb-0-75);
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   letter-spacing: 3px;
 }
 .home-container .home-content .home-data-description {
+  color: #fff;
   margin-bottom: var(--mb-2);
   letter-spacing: 3px;
 }
@@ -304,14 +311,14 @@ img {
   display: none;
 }
 .home-container .home-scroll-button {
-  color: var(--first-color);
+  color: #fff;
   transition: 0.3s;
 }
 .home-container .home-scroll-button:hover {
   transform: translateY(0.25rem);
 }
 .home-container .home-scroll-button-name {
-  color: var(--title-color);
+  color: #fff;
   margin-right: var(--mb-0-25);
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
