@@ -220,7 +220,6 @@ img {
 
 /* Home */
 .home.section {
-  background-color: var(--first-color);
   color: #fff;
 }
 
@@ -303,9 +302,11 @@ img {
   letter-spacing: 3px;
 }
 .home-container .home-content .home-data-description {
-  color: #fff;
+  font-size: var(--h3-font-size);
   margin-bottom: var(--mb-2);
-  letter-spacing: 3px;
+  background-color: var(--first-color);
+  padding: 0.5rem 1rem;
+  display: inline-block;
 }
 .home-container .home-scroll {
   display: none;
