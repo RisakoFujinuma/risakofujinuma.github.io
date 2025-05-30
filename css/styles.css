@@ -281,6 +281,7 @@ img {
 .home-container .home-content .home-data-title {
   color: #fff;
   font-size: var(--big-font-size);
+  text-align: left;
 }
 .home-container .home-content .home-data-subtitle {
   color: #fff;
@@ -288,6 +289,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   letter-spacing: 3px;
+  text-align: left;
 }
 .home-container .home-content .home-data-description {
   font-size: var(--h3-font-size);
@@ -295,6 +297,7 @@ img {
   background-color: var(--first-color);
   padding: 0.5rem 1rem;
   display: inline-block;
+  text-align: left;
 }
 .home-container .home-scroll {
   display: none;
