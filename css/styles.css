@@ -237,7 +237,7 @@ img {
   width: 100%;
   border-bottom: 1px solid #900603;
   padding-bottom: 2rem;
-  background-color:  #900603;
+  background-color: #900603;
 }
 .home-images {
   display: flex;
@@ -273,20 +273,6 @@ img {
   object-fit: contain;
   border-radius: 0;
   box-shadow: none;
-}
-.home-container .home-content .home-social {
-  display: grid;
-  grid-template-columns: max-content;
-  row-gap: 1rem;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.home-container .home-content .home-social-icon {
-  color: #fff;
-  font-size: 1.25rem;
-}
-.home-container .home-content .home-social-icon:hover {
-  color: var(--first-color-alt);
 }
 .home-container .home-content .home-data {
   text-align: left;
