@@ -277,11 +277,13 @@ img {
 .home-container .home-content .home-data {
   text-align: left;
   background-color: var(--first-color);
+  padding: 1rem;
 }
 .home-container .home-content .home-data-title {
   color: #fff;
   font-size: var(--big-font-size);
   text-align: left;
+  margin-bottom: var(--mb-0-75);
 }
 .home-container .home-content .home-data-subtitle {
   color: #fff;
@@ -295,9 +297,8 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-2);
   background-color: var(--first-color);
-  padding: 0.5rem 1rem;
-  display: inline-block;
   text-align: left;
+  display: block;
 }
 .home-container .home-scroll {
   display: none;
