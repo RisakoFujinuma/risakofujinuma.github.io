@@ -233,10 +233,10 @@ img {
 .home-container .home-content {
   grid-template-columns: 1fr;
   align-items: center;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   width: 100%;
   border-bottom: 1px solid #900603;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #900603;
 }
 .home-images {
@@ -277,13 +277,13 @@ img {
 .home-container .home-content .home-data {
   text-align: left;
   background-color: var(--first-color);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .home-container .home-content .home-data-title {
   color: #fff;
   font-size: var(--big-font-size);
   text-align: left;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-0-5);
 }
 .home-container .home-content .home-data-subtitle {
   color: #fff;
