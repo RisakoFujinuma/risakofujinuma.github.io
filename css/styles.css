@@ -385,6 +385,9 @@ img {
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-2-5);
   text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about-container-data-info {
   display: flex;
