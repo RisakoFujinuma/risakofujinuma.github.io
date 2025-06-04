@@ -386,6 +386,13 @@ img {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
 }
 .about-container-data-info {
   display: flex;
