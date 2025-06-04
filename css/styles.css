@@ -237,7 +237,7 @@ img {
   width: 100%;
   border-bottom: 1px solid #900603;
   padding-bottom: 1rem;
-  background-color: #900603;
+  background-color: #fff;
 }
 .home-images {
   display: flex;
@@ -276,11 +276,11 @@ img {
 }
 .home-container .home-content .home-data {
   text-align: left;
-  background-color: var(--first-color);
+  background-color: #fff;
   padding: 0.5rem;
 }
 .home-container .home-content .home-data-title {
-  color: #fff;
+  color: #900603;
   font-size: var(--big-font-size);
   text-align: left;
   margin-bottom: var(--mb-0-5);
@@ -296,10 +296,10 @@ img {
 .home-container .home-content .home-data-description {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-2);
-  background-color: var(--first-color);
+  background-color: #fff;
   text-align: left;
   display: block;
-  color: #fff;
+  color: #900603;
   font-weight: var(--font-medium);
   letter-spacing: 3px;
 }
