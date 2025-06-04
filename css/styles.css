@@ -175,9 +175,6 @@ img {
   font-weight: var(--font-medium);
   padding-left: 0.5rem;
 }
-.header .nav-logo:hover {
-  color: var(--first-color-alt);
-}
 .header .nav-toggle {
   color: #fff;
   font-size: 1.5rem;
