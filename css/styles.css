@@ -173,6 +173,7 @@ img {
   color: #fff;
   font-size: 1.3rem;
   font-weight: var(--font-medium);
+  padding-left: 0.5rem;
 }
 .header .nav-logo:hover {
   color: var(--first-color-alt);
@@ -276,7 +277,7 @@ img {
 }
 .home-container .home-content .home-data {
   text-align: left;
-  background-color: #fff;
+  background-color: #f7f4ed;
   padding: 0.5rem;
 }
 .home-container .home-content .home-data-title {
