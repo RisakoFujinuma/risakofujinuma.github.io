@@ -280,7 +280,7 @@ img {
   padding: 0.5rem;
 }
 .home-container .home-content .home-data-title {
-  color: #900603;
+  color: #900603 !important;
   font-size: var(--big-font-size);
   text-align: left;
   margin-bottom: var(--mb-0-5);
@@ -299,7 +299,7 @@ img {
   background-color: #fff;
   text-align: left;
   display: block;
-  color: #900603;
+  color: #900603 !important;
   font-weight: var(--font-medium);
   letter-spacing: 3px;
 }
