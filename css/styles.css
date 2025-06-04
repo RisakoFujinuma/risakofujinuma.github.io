@@ -371,6 +371,10 @@ img {
 }
 
 /* About section */
+.about.section {
+  border-bottom: 1px solid #900603;
+  padding-bottom: 3rem;
+}
 .about-container-img {
   display: flex;
   justify-content: center;
