@@ -237,7 +237,7 @@ img {
   width: 100%;
   border-bottom: 1px solid #900603;
   padding-bottom: 1rem;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .home-images {
   display: flex;
