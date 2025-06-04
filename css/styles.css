@@ -294,7 +294,7 @@ img {
 .home-container .home-content .home-data-description {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-2);
-  background-color: #fff;
+  background-color: #f7f4ed;
   text-align: left;
   display: block;
   color: #900603 !important;
