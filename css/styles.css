@@ -725,7 +725,7 @@ img {
   color: var(--first-color-lighter);
 }
 .footer .footer-copy {
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-1);
   color: #fff;
   font-size: var(--smaller-font-size);
   text-align: center;
