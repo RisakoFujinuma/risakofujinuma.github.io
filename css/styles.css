@@ -1040,4 +1040,12 @@ img {
   .footer-links .footer-link {
     margin-left: var(--mb-1);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.contact-email {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  color: var(--text-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
+}
