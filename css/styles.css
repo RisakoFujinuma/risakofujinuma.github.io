@@ -1046,6 +1046,7 @@ img {
   text-align: center;
   font-size: var(--h1-font-size);
   color: var(--text-color);
-  margin-top: var(--mb-2);
-  margin-bottom: var(--mb-2);
+  margin: var(--mb-2) auto;
+  max-width: 800px;
+  display: block;
 }
