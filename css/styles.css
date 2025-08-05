@@ -789,6 +789,44 @@ img {
   background-color: var(--text-color-light);
 }
 
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close {
+  color: #f1f1f1;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 /* Small devices */
 @media screen and (max-width: 350px) {
