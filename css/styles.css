@@ -195,9 +195,8 @@ img {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  max-width: 600px;
+  grid-template-columns: repeat(2, 150px);
+  gap: 0.5rem;
 }
 
 .work-item {
@@ -328,10 +327,7 @@ img {
   }
 
   .work-grid {
-    gap: 2rem;
-  }
-
-  .work-grid {
-    max-width: 700px;
+    grid-template-columns: repeat(2, 200px);
+    gap: 1rem;
   }
 }
