@@ -226,15 +226,16 @@ img {
 }
 
 .hero-container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-description {
   color: var(--title-color);
   font-size: var(--normal-font-size);
   line-height: 1.8;
-  text-align: center;
+  text-align: left;
 }
 
 /* ==================== WORK GRID ==================== */
