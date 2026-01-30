@@ -205,6 +205,10 @@ img {
   color: var(--first-color);
 }
 
+.nav-link.active {
+  color: #808080;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
