@@ -195,8 +195,8 @@ img {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
-  gap: 1rem;
+  grid-template-columns: repeat(2, 400px);
+  gap: 1.5rem;
 }
 
 .work-item {
@@ -316,7 +316,8 @@ img {
 /* Medium devices */
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .work-grid {
-    gap: 1rem;
+    grid-template-columns: repeat(2, 400px);
+    gap: 1.5rem;
   }
 }
 
