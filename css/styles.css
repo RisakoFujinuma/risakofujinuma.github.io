@@ -222,7 +222,7 @@ img {
 }
 
 .hero-container {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .hero-description {
@@ -241,7 +241,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .work-item {
@@ -363,7 +363,7 @@ img {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    max-width: 700px;
+    max-width: 100%;
   }
 }
 
@@ -376,6 +376,6 @@ img {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 90%;
+    max-width: 100%;
   }
 }
