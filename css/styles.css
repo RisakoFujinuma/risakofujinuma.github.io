@@ -205,7 +205,7 @@ img {
   border-radius: 0;
   transition: transform 0.3s, box-shadow 0.3s;
   aspect-ratio: 4 / 3;
-  max-height: 150px;
+  max-height: 100px;
 }
 
 .work-item:hover {
@@ -332,6 +332,6 @@ img {
   }
 
   .work-item {
-    max-height: 175px;
+    max-height: 120px;
   }
 }
