@@ -327,7 +327,7 @@ img {
   }
 
   .work-grid {
-    grid-template-columns: repeat(2, 350px);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 500px);
+    gap: 2rem;
   }
 }
