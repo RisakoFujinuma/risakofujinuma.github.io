@@ -236,11 +236,15 @@ img {
 .work {
   padding-top: 1rem;
   padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .work-container {
   padding: 0;
+  margin: 0;
   max-width: 100%;
+  width: 100%;
 }
 
 .work-grid {
