@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Professional portfolio for Risako Fujinuma">
-    <meta name="keywords" content="Chemistry, Thesis, Polymer Brushes, Engineer, Chemical Engineer, Curriculum, CV, Risako Fujinuma, Portfolio">
-    <meta name="copyright" content="Judit Lázaro Moyano">
-    <meta name="author" content="JuditKaramazov">
+    <meta name="keywords" content="Graphic Design, Package Design, Branding, Typography, Risako Fujinuma, Portfolio">
+    <meta name="author" content="Risako Fujinuma">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="QabE4pgOKR5rQ45trqzVGARIOV6c3OB0FW_ZBUJtQqQ" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon//site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <title>Risako Fujinuma | Portfolio</title>
 </head>
 
@@ -22,67 +18,60 @@
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <span class="nav-logo">Risako Fujinuma</span>
-
-            <!-- Navigation -->
+            <a href="/" class="nav-logo">Risako Fujinuma</a>
             <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list grid">
+                <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">
-                            <i class="fas fa-home nav-link-icon"></i> Home
-                        </a>
+                        <a href="#work" class="nav-link">WORK</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">
-                            <i class="fas fa-user nav-link-icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            <i class="fas fa-envelope nav-link-icon"></i> Contact
-                        </a>
+                        <a href="#about" class="nav-link">ABOUT</a>
                     </li>
                 </ul>
-                <i class="fas fa-times nav-close" id="nav-close"></i>
             </div>
-            <div class="nav-btns">
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="fas fa-qrcode"></i>
-                </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
     <!-- Main -->
     <main class="main">
-        <!-- Home section -->
-        <section class="home section" id="home">
-            <div class="home-container container grid">
-                <div class="home-content grid">
-                    <div class="home-data">
-                        <h1 class="home-data-title">Risako is ...</h1>
-                        <p class="home-data-description">A dedicated and detail-oriented designer<br>with strong hands-on skills!<br></p>
-                    </div>
-                </div>
-                <div class="home-images">
-                    <div class="home-images-row">
-                        <div class="image-container"><img src="img/PackageDesign.jpg" alt="Package Design" class="home-package-img" onclick="openModal(this.src)"></div>
-                        <div class="image-container"><img src="img/pastabox.jpg" alt="Pasta Box Design" class="home-package-img"></div>
-                    </div>
-                    <div class="home-images-row">
-                        <div class="image-container"><img src="img/musicfes.jpg" alt="Music Festival Design" class="home-package-img"></div>
-                        <div class="image-container"><img src="img/tactileposter.jpg" alt="Tactile Poster Design" class="home-package-img"></div>
-                        <div class="image-container"><img src="img/restaurant_branding.jpg" alt="Restaurant Branding" class="home-package-img"></div>
-                    </div>
-                    <div class="home-images-row">
-                        <div class="image-container"><img src="img/customfont_zine.jpg" alt="Custom Font Zine Design" class="home-package-img"></div>
-                        <div class="image-container"><img src="./img/mentalhealth_video.png" alt="Mental Health Video Design" class="home-package-img"></div>
-                    </div>
-                </div>
-                <div class="home-scroll">
-                    <a href="#about" class="home-scroll-button button-flex">
-                        <span class="home-scroll-button-name">Scroll down</span>
-                        <i class="fas fa-arrow-down home-scroll-button-arrow"></i>
+        <!-- Hero section -->
+        <section class="hero section" id="home">
+            <div class="hero-container container">
+                <p class="hero-description">
+                    Risako Fujinuma is a New York-based graphic designer specializing<br>
+                    in brand systems, print, packaging and typeface.
+                </p>
+            </div>
+        </section>
+
+        <!-- Work section -->
+        <section class="work section" id="work">
+            <div class="work-container container">
+                <div class="work-grid">
+                    <!-- Row 1 -->
+                    <a href="package-design/" class="work-item work-item-large">
+                        <img src="img/newsletter_cover.jpg" alt="LargeHearted Boy Newsletter Design" class="work-img">
+                    </a>
+                    <a href="package-design/pasta-box.html" class="work-item">
+                        <img src="img/pastabox.jpg" alt="Pasta Box Design" class="work-img">
+                    </a>
+
+                    <!-- Row 2 -->
+                    <a href="#" class="work-item">
+                        <img src="img/musicfes.jpg" alt="Music Festival Design" class="work-img">
+                    </a>
+                    <a href="package-design/pasta-box.html" class="work-item">
+                        <img src="assets/images/pastabox/pastabox2.jpg" alt="De Cecco Pasta Box Design" class="work-img">
+                    </a>
+
+                    <!-- Row 3 -->
+                    <a href="#" class="work-item work-item-full">
+                        <img src="assets/images/Cemetery/CEMETERY1.jpg" alt="Cemetery Design" class="work-img">
                     </a>
                 </div>
             </div>
@@ -91,51 +80,28 @@
         <!-- About section -->
         <section class="about section" id="about">
             <h2 class="section-title">About Me</h2>
-
-            <div class="about-container container grid">
+            <div class="about-container container">
                 <div class="about-container-data">
                     <p class="about-container-data-description">After growing up in Japan and gaining work experience in Tokyo, I moved to the U.S. in 2021.<br>I am currently studying Graphic Design in the BFA Design program at the School of Visual Arts.</p>
                 </div>
             </div>
         </section>
 
-       <!-- Contact section -->
+        <!-- Contact section -->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <span class="section-subtitle">Got a project idea? I'd love to hear from you!<br>Feel free to reach out via email:)</span>
             <p class="contact-email">risakofujinuma@gmail.com</p>
-
-            <div class="contact-container container grid">
-                <form id="contact-form" class="contact-form">
-                </form>                                                  
-            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-bg">
-            <div class="footer-container container">
-            </div>
-            <p class="footer-copy">&#169; Risako Fujinuma. All rights reserved.</p>
+            <p class="footer-copy">&copy; Risako Fujinuma. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Modal for large image display -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-
-    <!-- Scroll & scripts -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="fas fa-arrow-up scrollup-icon"></i>
-    </a>
-
-    <script src="https://kit.fontawesome.com/027d3564f6.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script src="js/swiper-bundle.js"></script>
     <script src="js/main.js"></script>
-
-    </body>
+</body>
 </html>

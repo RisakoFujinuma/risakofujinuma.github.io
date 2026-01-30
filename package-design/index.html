@@ -1,61 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package Design</title>
+    <meta name="description" content="Olive Oil & Balsamic Package Design by Risako Fujinuma">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <title>Olive Oil & Balsamic Package | Risako Fujinuma</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f4ed;
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+            padding-bottom: 2rem;
         }
-        .header {
-            text-align: center;
-            padding: 2rem 0;
+
+        .project-hero-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
-        .header img {
-            max-width: 100%;
+
+        .project-hero-img {
+            width: 100%;
             height: auto;
-            max-height: 400px;
-            object-fit: contain;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+            border-radius: 4px;
         }
-        .content {
-            max-width: 800px;
+
+        .project-content {
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
         }
-        h1 {
-            color: #900603;
+
+        .project-title {
+            font-size: var(--h1-font-size);
+            color: var(--first-color);
             margin-bottom: 1rem;
         }
-        p {
-            line-height: 1.6;
-            color: #333;
+
+        .project-description {
+            font-size: var(--normal-font-size);
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 2rem;
         }
-        .back-link {
-            display: inline-block;
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
             margin-top: 2rem;
-            color: #900603;
-            text-decoration: none;
-            font-weight: bold;
         }
-        .back-link:hover {
-            text-decoration: underline;
+
+        .project-gallery-item {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .project-gallery-item.full-width {
+            grid-column: span 2;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .project-hero-images {
+                grid-template-columns: 1fr;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .project-gallery-item.full-width {
+                grid-column: span 1;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="header">
-        <img src="/img/PackageDesign.jpg" alt="Package Design" />
-    </div>
-    <div class="content">
-        <h1>Package Design</h1>
-        <p>This image showcases a beautifully designed packaging suite for olive oil and balsamic vinegar. The design features elegant labels and complementary packaging boxes, emphasizing the quality and origin of the products. The rich colors and detailed illustrations on the packaging aim to attract discerning consumers and convey a sense of tradition and craftsmanship.</p>
-        <a href="../" class="back-link">← Back to Portfolio</a>
-    </div>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../" class="nav-logo">Risako Fujinuma</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../#work" class="nav-link">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../#about" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-images">
+                    <img src="../assets/images/oliveoil/package1-1.jpg" alt="Olive Oil & Balsamic Vinegar Bottles" class="project-hero-img">
+                    <img src="../assets/images/oliveoil/package1-2.jpg" alt="Olive Oil Package Detail" class="project-hero-img">
+                    <img src="../assets/images/oliveoil/package1-3.jpg" alt="Balsamic Vinegar Package" class="project-hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="project-content">
+            <h1 class="project-title">Olive oil & Balsamic Package</h1>
+            <p class="project-description">
+                I designed the bottle labels and box packaging for extra virgin olive oil & balsamic vinegar bottles. I focused on creating a sense of luxury through thin line artwork in the illustration. On the back side, I included illustrations of the carefully crafted production process to tell more of a story.
+            </p>
+
+            <div class="project-gallery">
+                <img src="../assets/images/oliveoil/package1-4.jpg" alt="Package Box Design" class="project-gallery-item">
+                <img src="../assets/images/oliveoil/package1-5.jpg" alt="Package Box Unfolded" class="project-gallery-item">
+                <img src="../assets/images/oliveoil/package1-6.png" alt="Package Die Cut" class="project-gallery-item full-width">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <p class="footer-copy">&copy; Risako Fujinuma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
