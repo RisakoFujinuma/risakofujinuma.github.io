@@ -196,7 +196,8 @@ img {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
+  max-width: 600px;
 }
 
 .work-item {
@@ -205,7 +206,6 @@ img {
   border-radius: 0;
   transition: transform 0.3s, box-shadow 0.3s;
   aspect-ratio: 4 / 3;
-  max-height: 100px;
 }
 
 .work-item:hover {
@@ -331,7 +331,7 @@ img {
     gap: 2rem;
   }
 
-  .work-item {
-    max-height: 120px;
+  .work-grid {
+    max-width: 700px;
   }
 }
