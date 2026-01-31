@@ -11,11 +11,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
     <title>Olive Oil & Balsamic Package | Risako Fujinuma</title>
     <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .project-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            padding: calc(var(--header-height) + 4rem) 20px 2rem 20px;
+            padding: 2rem 20px;
             max-width: 100%;
             align-items: start;
         }
@@ -132,6 +142,11 @@
 
     <!-- Main -->
     <main class="main">
+        <!-- Hero Image -->
+        <section class="project-hero">
+            <img src="../assets/images/oliveoil/package1-1.jpg" alt="Olive Oil & Balsamic Vinegar Bottles" class="project-hero-img">
+        </section>
+
         <!-- Row 1: Text + package1-2 -->
         <section class="project-info">
             <div class="project-info-text">
