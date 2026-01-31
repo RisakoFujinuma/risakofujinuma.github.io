@@ -364,13 +364,14 @@ img {
   grid-template-columns: 120px 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
-  align-items: baseline;
+  align-items: first baseline;
 }
 
 .about-label {
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   letter-spacing: 1px;
+  line-height: 1.8;
 }
 
 .about-text {
@@ -393,6 +394,7 @@ img {
 .contact-type {
   font-size: var(--small-font-size);
   color: var(--text-color);
+  display: block;
 }
 
 .contact-link {
