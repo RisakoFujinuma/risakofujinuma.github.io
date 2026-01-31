@@ -332,7 +332,7 @@ img {
 
 /* ==================== ABOUT PAGE ==================== */
 .about-hero {
-  padding-top: calc(var(--header-height) + 4rem);
+  padding-top: calc(var(--header-height) + 6rem);
   padding-bottom: 3rem;
 }
 
@@ -364,6 +364,7 @@ img {
   grid-template-columns: 120px 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
+  align-items: start;
 }
 
 .about-label {
