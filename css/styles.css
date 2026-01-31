@@ -330,6 +330,80 @@ img {
   text-align: center;
 }
 
+/* ==================== ABOUT PAGE ==================== */
+.about-hero {
+  padding-top: calc(var(--header-height) + 4rem);
+  padding-bottom: 3rem;
+}
+
+.about-hero-container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-hero-title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.about-content {
+  padding: 0 0 4rem 0;
+}
+
+.about-content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-label {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 1px;
+}
+
+.about-text {
+  font-size: var(--normal-font-size);
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+}
+
+.contact-type {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.contact-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: var(--first-color);
+}
+
 /* ==================== MEDIA QUERIES ==================== */
 
 /* Small devices */
@@ -374,6 +448,16 @@ img {
 
   .nav-toggle {
     display: flex;
+  }
+
+  /* About page responsive */
+  .about-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-hero-title {
+    font-size: var(--h2-font-size);
   }
 }
 
