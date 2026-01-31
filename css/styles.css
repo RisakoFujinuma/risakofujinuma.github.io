@@ -364,7 +364,7 @@ img {
   grid-template-columns: 120px 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
-  align-items: start;
+  align-items: baseline;
 }
 
 .about-label {
