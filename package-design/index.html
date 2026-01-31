@@ -11,22 +11,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
     <title>Olive Oil & Balsamic Package | Risako Fujinuma</title>
     <style>
-        .project-hero {
-            padding-top: calc(var(--header-height) + 2rem);
-        }
-
-        .project-hero-img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
         .project-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            padding: 3rem 20px;
+            padding: calc(var(--header-height) + 4rem) 20px 2rem 20px;
             max-width: 100%;
+            align-items: start;
         }
 
         .project-info-text {
@@ -56,7 +47,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 4px;
-            padding: 0 20px;
+            padding: 4px 20px 0 20px;
         }
 
         .project-gallery-item {
@@ -65,33 +56,36 @@
             display: block;
         }
 
-        .project-gallery-item.full-width {
-            grid-column: span 2;
-        }
-
-        .project-gallery-row {
+        .project-gallery-bottom {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
             gap: 4px;
-            padding: 0 20px;
-            margin-top: 4px;
+            padding: 4px 20px 0 20px;
             align-items: start;
         }
 
-        .project-gallery-row img {
+        .project-gallery-bottom img {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        .project-gallery-row img:last-child {
-            max-width: 60%;
+        .project-gallery-bottom .diecut-container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .project-gallery-bottom .diecut-container img {
+            width: 70%;
+            height: auto;
         }
 
         /* Responsive */
         @media screen and (max-width: 768px) {
             .project-info {
                 grid-template-columns: 1fr;
+                padding-top: calc(var(--header-height) + 2rem);
             }
 
             .project-info-text {
@@ -102,12 +96,12 @@
                 grid-template-columns: 1fr;
             }
 
-            .project-gallery-item.full-width {
-                grid-column: span 1;
+            .project-gallery-bottom {
+                grid-template-columns: 1fr;
             }
 
-            .project-gallery-row {
-                grid-template-columns: 1fr;
+            .project-gallery-bottom .diecut-container img {
+                width: 100%;
             }
         }
     </style>
@@ -138,11 +132,6 @@
 
     <!-- Main -->
     <main class="main">
-        <!-- Project Hero -->
-        <section class="project-hero">
-            <img src="../assets/images/oliveoil/package1-1.jpg" alt="Olive Oil & Balsamic Vinegar Bottles" class="project-hero-img">
-        </section>
-
         <!-- Project Info -->
         <section class="project-info">
             <div class="project-info-text">
@@ -156,16 +145,18 @@
             </div>
         </section>
 
-        <!-- Project Gallery -->
+        <!-- Project Gallery Row 1 -->
         <section class="project-gallery">
             <img src="../assets/images/oliveoil/package1-2.jpg" alt="Olive Oil Package Detail" class="project-gallery-item">
             <img src="../assets/images/oliveoil/package1-5.jpg" alt="Package Box Unfolded" class="project-gallery-item">
         </section>
 
-        <!-- Bottom Row -->
-        <section class="project-gallery-row">
+        <!-- Project Gallery Row 2 -->
+        <section class="project-gallery-bottom">
             <img src="../assets/images/oliveoil/package1-3.jpg" alt="Balsamic Vinegar Package">
-            <img src="../assets/images/oliveoil/package1-6.png" alt="Package Die Cut">
+            <div class="diecut-container">
+                <img src="../assets/images/oliveoil/package1-6.png" alt="Package Die Cut">
+            </div>
         </section>
     </main>
 
