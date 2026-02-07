@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="De Cecco Pasta Box Package Design by Risako Fujinuma">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <title>De Cecco Pasta Box | Risako Fujinuma</title>
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem 20px;
+            max-width: 100%;
+            align-items: start;
+        }
+
+        .project-info-text {
+            padding-right: 2rem;
+        }
+
+        .project-title {
+            font-size: var(--h1-font-size);
+            color: var(--title-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            font-size: 20px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .project-info-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery {
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                padding-top: calc(var(--header-height) + 2rem);
+            }
+
+            .project-info-text {
+                padding-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav-logo">Risako Fujinuma</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Image -->
+        <section class="project-hero">
+            <img src="../assets/images/pastabox/pastabox1.jpg" alt="De Cecco Pasta Box Design" class="project-hero-img">
+        </section>
+
+        <!-- Row 1: Text + pastabox2 -->
+        <section class="project-info">
+            <div class="project-info-text">
+                <h1 class="project-title">De Cecco Pasta Box</h1>
+                <p class="project-description">
+                    A package redesign concept for De Cecco pasta. The design explores a refined visual identity while honoring the brand's Italian heritage and tradition of quality craftsmanship.
+                </p>
+            </div>
+            <div class="project-info-image">
+                <img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Pasta Box Detail">
+            </div>
+        </section>
+
+        <!-- Row 2: pastabox3 -->
+        <section class="project-gallery">
+            <img src="../assets/images/pastabox/pastabox3.jpg" alt="De Cecco Pasta Box Package" class="project-gallery-item">
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
