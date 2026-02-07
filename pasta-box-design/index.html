@@ -54,10 +54,37 @@
         }
 
         .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
             padding: 4px 20px 0 20px;
         }
 
         .project-gallery-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-full {
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-bottom {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4px;
+            padding: 4px 20px 0 20px;
+            align-items: start;
+        }
+
+        .project-gallery-bottom img {
             width: 100%;
             height: auto;
             display: block;
@@ -72,6 +99,14 @@
 
             .project-info-text {
                 padding-right: 0;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .project-gallery-bottom {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -104,25 +139,36 @@
     <main class="main">
         <!-- Hero Image -->
         <section class="project-hero">
-            <img src="../assets/images/pastabox/pastabox1.jpg" alt="De Cecco Pasta Box Design" class="project-hero-img">
+            <img src="../assets/images/pastabox/pastabox1.jpg" alt="De Cecco Linguine Pasta Box" class="project-hero-img">
         </section>
 
         <!-- Row 1: Text + pastabox2 -->
         <section class="project-info">
             <div class="project-info-text">
-                <h1 class="project-title">De Cecco Pasta Box</h1>
+                <h1 class="project-title">DE CECCO<br>Pasta Package</h1>
                 <p class="project-description">
                     A package redesign concept for De Cecco pasta. The design explores a refined visual identity while honoring the brand's Italian heritage and tradition of quality craftsmanship.
                 </p>
             </div>
             <div class="project-info-image">
-                <img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Pasta Box Detail">
+                <img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Fusilli Pasta Box">
             </div>
         </section>
 
-        <!-- Row 2: pastabox3 -->
+        <!-- Row 2: pastabox3 + pastabox4 (two images side by side) -->
         <section class="project-gallery">
-            <img src="../assets/images/pastabox/pastabox3.jpg" alt="De Cecco Pasta Box Package" class="project-gallery-item">
+            <img src="../assets/images/pastabox/pastabox3.jpg" alt="De Cecco Fusilli Box Angles" class="project-gallery-item">
+            <img src="../assets/images/pastabox/pastabox4.jpg" alt="De Cecco Pasta Box Back" class="project-gallery-item">
+        </section>
+
+        <!-- Row 3: pastabox5 full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/pastabox/pastabox5.jpg" alt="De Cecco Pasta Box Detail">
+        </section>
+
+        <!-- Row 4: pastabox6 full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/pastabox/pastabox6.jpg" alt="De Cecco Pasta Box Die Cut">
         </section>
     </main>
 
