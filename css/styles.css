@@ -106,8 +106,8 @@ html {
 
 body {
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: var(--body-color);
   color: var(--text-color);
   font-family: var(--body-font);
