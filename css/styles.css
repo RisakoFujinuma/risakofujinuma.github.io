@@ -106,6 +106,8 @@ html {
 
 body {
   margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: var(--body-color);
   color: var(--text-color);
   font-family: var(--body-font);
