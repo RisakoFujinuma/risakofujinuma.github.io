@@ -381,7 +381,7 @@ img {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   line-height: 1.4;
-  text-align: center;
+  text-align: left;
 }
 
 .about-content {
