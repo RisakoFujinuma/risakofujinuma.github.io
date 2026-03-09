@@ -183,7 +183,7 @@ img {
 
 .nav-logo {
   color: var(--title-color);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: var(--font-medium);
 }
 
@@ -197,7 +197,7 @@ img {
 
 .nav-link {
   color: var(--title-color);
-  font-size: var(--small-font-size);
+  font-size: calc(var(--small-font-size) * 1.05);
   font-weight: var(--font-medium);
   letter-spacing: 1px;
   transition: color 0.3s;
