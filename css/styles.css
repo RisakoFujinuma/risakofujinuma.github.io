@@ -384,6 +384,24 @@ img {
   text-align: left;
 }
 
+.about-contact {
+  padding: 3rem 0;
+  text-align: left;
+}
+
+.about-contact-link {
+  display: block;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  line-height: 1.8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about-contact-link:hover {
+  color: var(--first-color);
+}
+
 .about-content {
   padding: 0 0 4rem 0;
 }
