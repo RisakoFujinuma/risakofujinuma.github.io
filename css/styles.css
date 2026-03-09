@@ -385,14 +385,16 @@ img {
 }
 
 .about-contact {
-  padding: 3rem 0;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
   text-align: left;
 }
 
 .about-contact-link {
   display: block;
-  color: var(--text-color);
-  font-size: var(--normal-font-size);
+  color: #000000;
+  font-size: 20px;
   line-height: 1.8;
   text-decoration: none;
   transition: color 0.3s;
