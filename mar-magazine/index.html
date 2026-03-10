@@ -74,6 +74,23 @@
             display: block;
         }
 
+        .project-gallery-half {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-half img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-half .spacer {
+            display: block;
+        }
+
         /* Responsive */
         @media screen and (max-width: 768px) {
             .project-info {
@@ -135,22 +152,40 @@
             </div>
         </section>
 
-        <!-- Row 2: Spread 1 + Spread 2 -->
-        <section class="project-gallery">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread1.jpg" alt="MAR Magazine Spread 1" class="project-gallery-item">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread2.jpg" alt="MAR Magazine Spread 2" class="project-gallery-item">
+        <!-- Row 2: Spread 1 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread1.jpg" alt="MAR Magazine Spread 1">
+            <div class="spacer"></div>
         </section>
 
-        <!-- Row 3: Spread 3 + Spread 4 -->
-        <section class="project-gallery">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread3.jpg" alt="MAR Magazine Spread 3" class="project-gallery-item">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread4.jpg" alt="MAR Magazine Spread 4" class="project-gallery-item">
+        <!-- Row 2b: Spread 2 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread2.jpg" alt="MAR Magazine Spread 2">
         </section>
 
-        <!-- Row 4: Spread 5 + Spread 6 -->
-        <section class="project-gallery">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread5.jpg" alt="MAR Magazine Spread 5" class="project-gallery-item">
-            <img src="../assets/images/MAR_magazine/MAR_magazine_spread6.jpg" alt="MAR Magazine Spread 6" class="project-gallery-item">
+        <!-- Row 3: Spread 3 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread3.jpg" alt="MAR Magazine Spread 3">
+            <div class="spacer"></div>
+        </section>
+
+        <!-- Row 4: Spread 4 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread4.jpg" alt="MAR Magazine Spread 4">
+        </section>
+
+        <!-- Row 5: Spread 5 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread5.jpg" alt="MAR Magazine Spread 5">
+            <div class="spacer"></div>
+        </section>
+
+        <!-- Row 6: Spread 6 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread6.jpg" alt="MAR Magazine Spread 6">
         </section>
     </main>
 
