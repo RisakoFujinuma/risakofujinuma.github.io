@@ -41,8 +41,43 @@
 
         .project-description {
             font-size: 20px;
-            line-height: 1.8;
+            line-height: 1.2;
             color: var(--text-color);
+        }
+
+        .project-credits {
+            display: block;
+            margin-top: 40px;
+            font-size: 0.8em;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+
+        .credit-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 2px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .credit-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 1.5px;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .credit-label {
+            min-width: 120px;
+            font-weight: normal;
+        }
+
+        .credit-value {
+            font-weight: normal;
         }
 
         .project-info-image img {
@@ -130,8 +165,22 @@
             <div class="project-info-text">
                 <h1 class="project-title">Cemetery</h1>
                 <p class="project-description">
-                    'Cemetery' is a custom typeface with long, pointed serifs and elegant scrollwork, with a consistent visual style across uppercase and lowercase letters, basic punctuation, and select dingbats.
+                    Cemetery is a display typeface designed for headlines and short to medium-length text, available in a single Thin weight. Inspired by the ornate wrought iron fences of New York, it merges delicate long pointed serifs with Victorian-era scrollwork to evoke a sense of melancholic beauty and dark elegance. Ideal for music album covers, film titles, posters, and luxury branding — best used at 72pt and above.
                 </p>
+                <div class="project-credits">
+                    <div class="credit-item">
+                        <span class="credit-label">Role</span>
+                        <span class="credit-value">Design</span>
+                    </div>
+                    <div class="credit-item">
+                        <span class="credit-label">Field</span>
+                        <span class="credit-value">Typeface Design</span>
+                    </div>
+                    <div class="credit-item">
+                        <span class="credit-label">Published</span>
+                        <span class="credit-value">December 2025</span>
+                    </div>
+                </div>
             </div>
             <div class="project-info-image">
                 <img src="../assets/images/Cemetery/cemetery2.jpg" alt="Cemetery Gate Design">
