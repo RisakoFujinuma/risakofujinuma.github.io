@@ -183,7 +183,7 @@ img {
 
 .nav-logo {
   color: var(--title-color);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: var(--font-medium);
 }
 
@@ -197,7 +197,7 @@ img {
 
 .nav-link {
   color: var(--title-color);
-  font-size: var(--small-font-size);
+  font-size: calc(var(--small-font-size) * 1.05);
   font-weight: var(--font-medium);
   letter-spacing: 1px;
   transition: color 0.3s;
@@ -378,11 +378,12 @@ img {
 }
 
 .about-hero-title {
-  font-size: 20px;
+  font-size: clamp(12px, 3.4vw, 25px);
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
   max-width: 50%;
+  white-space: nowrap;
 }
 
 .about-contact {
@@ -395,7 +396,7 @@ img {
 .about-contact-link {
   display: block;
   color: #000000;
-  font-size: 20px;
+  font-size: clamp(12px, 3.4vw, 20px);
   line-height: 1.8;
   text-decoration: none;
   transition: color 0.3s;
@@ -516,7 +517,7 @@ img {
   }
 
   .about-hero-title {
-    font-size: var(--h2-font-size);
+    max-width: 100%;
   }
 }
 
