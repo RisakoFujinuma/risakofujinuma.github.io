@@ -49,33 +49,36 @@
 
         .project-credits {
             display: block;
-            margin-top: 40px;
             font-size: 0.8em;
-            line-height: 1;
-            color: var(--text-color);
+            margin-top: 2rem;
         }
 
-        .credit-item {
+        .credit-row {
             display: flex;
-            flex-direction: column;
-            margin-bottom: 2px;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .credit-label {
-            font-weight: 600;
-        }
-
-        .credit-line {
-            display: block;
-            width: 60px;
-            height: 1.5px;
-            background-color: var(--text-color);
-            opacity: 0.3;
-            margin: 2px 0;
+            width: 120px;
+            flex-shrink: 0;
         }
 
         .credit-value {
-            font-weight: 400;
+            flex: 1;
         }
 
         .project-info-image img {
@@ -180,23 +183,11 @@
                 <p class="project-description">
                     A letterpress-printed pasta packaging for De Cecco, designed for two box sizes — Fusilli and Linguine. Inspired by the warmth of home cooking, the design features a quatrefoil pattern in wheat-yellow, referencing the main ingredient of pasta, combined with navy blue typography and orange and green accents. Both boxes share a unified visual identity, printed flat on 11×17" paper and folded into shape.
                 </p>
-                <div class="project-credits">
-                    <div class="credit-item">
-                        <span class="credit-label">Role</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">Design, Printing</span>
-                    </div>
-                    <div class="credit-item">
-                        <span class="credit-label">Field</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">Packaging Design</span>
-                    </div>
-                    <div class="credit-item">
-                        <span class="credit-label">Published</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">December 2024</span>
-                    </div>
-                </div>
+                <span class="project-credits">
+                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design, Printing</span></span>
+                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Packaging Design</span></span>
+                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">December 2024</span></span>
+                </span>
             </div>
             <div class="project-info-image">
                 <img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Fusilli Pasta Box">

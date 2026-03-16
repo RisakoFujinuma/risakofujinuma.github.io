@@ -47,33 +47,36 @@
 
         .project-credits {
             display: block;
-            margin-top: 40px;
             font-size: 0.8em;
-            line-height: 1;
-            color: var(--text-color);
+            margin-top: 2rem;
         }
 
-        .credit-item {
+        .credit-row {
             display: flex;
-            flex-direction: column;
-            margin-bottom: 2px;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .credit-label {
-            font-weight: 600;
-        }
-
-        .credit-line {
-            display: block;
-            width: 60px;
-            height: 1.5px;
-            background-color: var(--text-color);
-            opacity: 0.3;
-            margin: 2px 0;
+            width: 120px;
+            flex-shrink: 0;
         }
 
         .credit-value {
-            font-weight: 400;
+            flex: 1;
         }
 
         .project-info-image img {
@@ -183,28 +186,12 @@
                 <p class="project-description">
                     A packaging design for balsamic vinegar and extra virgin olive oil, inspired by Art Deco and modernized for a contemporary feel. The design features illustrations of the olive oil production process, telling a farm-to-table story of craft and authenticity.
                 </p>
-                <div class="project-credits">
-                    <div class="credit-item">
-                        <span class="credit-label">Role</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">Design, Illustration</span>
-                    </div>
-                    <div class="credit-item">
-                        <span class="credit-label">Field</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">Packaging</span>
-                    </div>
-                    <div class="credit-item">
-                        <span class="credit-label">Typefaces</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">Currently Confirming</span>
-                    </div>
-                    <div class="credit-item">
-                        <span class="credit-label">Published</span>
-                        <span class="credit-line"></span>
-                        <span class="credit-value">November 2024</span>
-                    </div>
-                </div>
+                <span class="project-credits">
+                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design, Illustration</span></span>
+                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Packaging</span></span>
+                        <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Currently Confirming</span></span>
+                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">November 2024</span></span>
+                </span>
             </div>
             <div class="project-info-image">
                 <img src="../assets/images/oliveoil/package1-2.jpg" alt="Olive Oil Package Detail">
