@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAR Magazine by Risako Fujinuma">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/favicon/R_icon-02.png">
+    <title>MAR Magazine | Risako Fujinuma</title>
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        .project-hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem 20px;
+            max-width: 100%;
+            align-items: start;
+        }
+
+        .project-info-text {
+            padding-right: 2rem;
+        }
+
+        .project-title {
+            font-size: var(--h1-font-size);
+            color: var(--title-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            font-size: 20px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .project-info-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-full {
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-half {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            padding: 4px 20px 0 20px;
+        }
+
+        .project-gallery-half img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-half .spacer {
+            display: block;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                padding-top: calc(var(--header-height) + 2rem);
+            }
+
+            .project-info-text {
+                padding-right: 0;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav-logo">Risako Fujinuma</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Image -->
+        <section class="project-hero">
+            <img class="project-hero-image" src="../assets/images/MAR_magazine/MAR_cover_image.jpg" alt="MAR Magazine">
+        </section>
+
+        <!-- Row 1: Text + Magazine Cover -->
+        <section class="project-info">
+            <div class="project-info-text">
+                <h1 class="project-title">MAR Magazine</h1>
+                <p class="project-description">
+                    A magazine design project exploring editorial layout, typography, and visual storytelling. Each spread is carefully crafted to balance imagery and text, creating an engaging reading experience.
+                </p>
+            </div>
+            <div class="project-info-image">
+                <img src="../assets/images/MAR_magazine/MAR_magazine_cover.jpg" alt="MAR Magazine Cover">
+            </div>
+        </section>
+
+        <!-- Row 2: Spread 1 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread1.jpg" alt="MAR Magazine Spread 1">
+            <div class="spacer"></div>
+        </section>
+
+        <!-- Row 2b: Spread 2 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread2.jpg" alt="MAR Magazine Spread 2">
+        </section>
+
+        <!-- Row 3: Spread 3 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread3.jpg" alt="MAR Magazine Spread 3">
+            <div class="spacer"></div>
+        </section>
+
+        <!-- Row 4: Spread 4 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread4.jpg" alt="MAR Magazine Spread 4">
+        </section>
+
+        <!-- Row 5: Spread 5 (left) -->
+        <section class="project-gallery-half">
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread5.jpg" alt="MAR Magazine Spread 5">
+            <div class="spacer"></div>
+        </section>
+
+        <!-- Row 6: Spread 6 (right) -->
+        <section class="project-gallery-half">
+            <div class="spacer"></div>
+            <img src="../assets/images/MAR_magazine/MAR_magazine_spread6.jpg" alt="MAR Magazine Spread 6">
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
