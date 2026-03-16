@@ -74,6 +74,40 @@
             display: block;
         }
 
+        .project-credits {
+            display: block;
+            font-size: 0.8em;
+            margin-top: 0.5rem;
+        }
+
+        .credit-row {
+            display: flex;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .credit-value {
+            flex: 1;
+        }
+
         /* Responsive */
         @media screen and (max-width: 768px) {
             .project-info {
@@ -130,11 +164,13 @@
                     Wild Orchard's Calm Focus Shot is an energy shot that concentrates the caffeine equivalent of 8 cups of tea, designed to gently enhance focus and clarity.<br><br>
                     The logo and typeface carry over the design identities established by Mucca Design for Wild Orchard's tea packaging, extended into the energy shot line. Wild Orchard is one of the few companies to have achieved Regenerative Organic Certification. Inspired by Wild Orchard's sun-drenched tea fields, the design uses a gradient to evoke light and optimism, a grain texture reminiscent of matcha particles, and a blue-green color palette to capture the freshness and vitality of an energy shot.<br><br>
                     <em>*Regenerative Organic Certified® farms and products meet the highest standards in the world for soil health, animal welfare, and farmworker fairness.</em><br><br>
-                    Role .................. Design, Illustration<br>
-                    Field ................. Packaging<br>
-                    Logo .................. Mucca<br>
-                    Typefaces ............. Mucca<br>
-                    Published ............. March 2026
+                    <span class="project-credits">
+                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design, Illustration</span></span>
+                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Packaging</span></span>
+                        <span class="credit-row"><span class="credit-label">Logo</span><span class="credit-value">Mucca</span></span>
+                        <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Mucca</span></span>
+                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">March 2026</span></span>
+                    </span>
                 </p>
             </div>
             <div class="project-info-image">
