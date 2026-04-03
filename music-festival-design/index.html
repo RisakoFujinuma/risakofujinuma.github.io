@@ -41,7 +41,7 @@
 
         .project-description {
             font-size: 20px;
-            line-height: 1.8;
+            line-height: 1.2;
             color: var(--text-color);
         }
 
@@ -95,6 +95,40 @@
             height: auto;
             display: block;
             object-fit: cover;
+        }
+
+        .project-credits {
+            display: block;
+            font-size: 0.8em;
+            margin-top: 2rem;
+        }
+
+        .credit-row {
+            display: flex;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .credit-value {
+            flex: 1;
         }
 
         /* Responsive */
@@ -159,7 +193,13 @@
             <div class="project-info-text">
                 <h1 class="project-title">Fun Fun Fun Fest Branding</h1>
                 <p class="project-description">
-                    I created two types of pixel letters using letterpress printing. I aimed to convey the smooth of something handmade to people of all ages and genders, choosing unusual colors like yellow, blue, orange, and green.
+                    Fun Fun Fun Fest is a multi-genre music festival in Austin, Texas, featuring hip-hop, indie rock, punk, and comedy. I created a brand identity centered around a 3D isometric stair typography logo, where the ascending steps visually represent the growing sense of fun and energy that builds throughout the festival. The vibrant gradient colors reflect the festival's diverse, high-energy atmosphere. The system includes festival banners, tickets, lanyards for different access levels, t-shirts, posters, skateboards, and hats.<br><br>
+                    <span class="project-credits">
+                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design</span></span>
+                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Brand Identity</span></span>
+                        <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Currently Confirming</span></span>
+                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">February 2024</span></span>
+                    </span>
                 </p>
             </div>
             <div class="project-info-image">
