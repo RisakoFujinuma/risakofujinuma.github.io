@@ -23,21 +23,21 @@
 
         .project-info {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 2rem;
             padding: 2rem 0;
             max-width: 100%;
             align-items: start;
         }
 
-        .project-info-text {
+        .project-info-title {
             padding-right: 2rem;
         }
 
         .project-title {
             font-size: var(--h1-font-size);
             color: var(--title-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             line-height: 1.3;
         }
 
@@ -81,7 +81,13 @@
             flex: 1;
         }
 
-        .project-info-image img {
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 4px 0 0 0;
+        }
+        .project-cover-image img {
             width: 100%;
             height: auto;
             display: block;
@@ -131,7 +137,7 @@
                 padding-top: calc(var(--header-height) + 2rem);
             }
 
-            .project-info-text {
+            .project-info-title {
                 padding-right: 0;
             }
 
@@ -176,10 +182,12 @@
             <img src="../assets/images/pastabox/pastabox1.jpg" alt="De Cecco Linguine Pasta Box" class="project-hero-img">
         </section>
 
-        <!-- Row 1: Text + pastabox2 -->
+        <!-- Row 1: Title + Description -->
         <section class="project-info">
-            <div class="project-info-text">
+            <div class="project-info-title">
                 <h1 class="project-title">DE CECCO<br>Pasta Package</h1>
+            </div>
+            <div class="project-info-description">
                 <p class="project-description">
                     A letterpress-printed pasta packaging for De Cecco, designed for two box sizes — Fusilli and Linguine. Inspired by the warmth of home cooking, the design features a quatrefoil pattern in wheat-yellow, referencing the main ingredient of pasta, combined with navy blue typography and orange and green accents. Both boxes share a unified visual identity, printed flat on 11×17" paper and folded into shape.
                 </p>
@@ -189,9 +197,12 @@
                         <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">December 2024</span></span>
                 </span>
             </div>
-            <div class="project-info-image">
-                <img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Fusilli Pasta Box">
-            </div>
+        </section>
+
+        <!-- Cover Image -->
+        <section class="project-cover-image">
+            <div></div>
+            <div><img src="../assets/images/pastabox/pastabox2.jpg" alt="De Cecco Fusilli Pasta Box"></div>
         </section>
 
         <!-- Row 2: pastabox3 + pastabox4 (two images side by side) -->

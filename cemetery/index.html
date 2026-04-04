@@ -21,21 +21,21 @@
 
         .project-info {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 2rem;
             padding: 2rem 0;
             max-width: 100%;
             align-items: start;
         }
 
-        .project-info-text {
+        .project-info-title {
             padding-right: 2rem;
         }
 
         .project-title {
             font-size: var(--h1-font-size);
             color: var(--title-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             line-height: 1.3;
         }
 
@@ -79,7 +79,13 @@
             flex: 1;
         }
 
-        .project-info-image img {
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 4px 0 0 0;
+        }
+        .project-cover-image img {
             width: 100%;
             height: auto;
             display: block;
@@ -118,7 +124,7 @@
                 padding-top: calc(var(--header-height) + 2rem);
             }
 
-            .project-info-text {
+            .project-info-title {
                 padding-right: 0;
             }
 
@@ -159,10 +165,12 @@
             <img src="../assets/images/Cemetery/CEMETERY1.jpg" alt="Cemetery" class="project-hero-img">
         </section>
 
-        <!-- Row 1: Text + Image -->
+        <!-- Row 1: Title + Description -->
         <section class="project-info">
-            <div class="project-info-text">
+            <div class="project-info-title">
                 <h1 class="project-title">Cemetery</h1>
+            </div>
+            <div class="project-info-description">
                 <p class="project-description">
                     Cemetery is a display typeface designed for headlines and short to medium-length text, available in a single Thin weight. Inspired by the ornate wrought iron fences of New York, it merges delicate long pointed serifs with Victorian-era scrollwork to evoke a sense of melancholic beauty and dark elegance. Ideal for music album covers, film titles, posters, and luxury branding — best used at 72pt and above.
                 </p>
@@ -172,9 +180,12 @@
                         <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">December 2025</span></span>
                 </span>
             </div>
-            <div class="project-info-image">
-                <img src="../assets/images/Cemetery/cemetery2.jpg" alt="Cemetery Gate Design">
-            </div>
+        </section>
+
+        <!-- Cover Image -->
+        <section class="project-cover-image">
+            <div></div>
+            <div><img src="../assets/images/Cemetery/cemetery2.jpg" alt="Cemetery Gate Design"></div>
         </section>
 
         <!-- Row 3: Half width left aligned -->

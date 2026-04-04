@@ -21,21 +21,21 @@
 
         .project-info {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 2rem;
             padding: 2rem 0;
             max-width: 100%;
             align-items: start;
         }
 
-        .project-info-text {
+        .project-info-title {
             padding-right: 2rem;
         }
 
         .project-title {
             font-size: var(--h1-font-size);
             color: var(--title-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             line-height: 1.3;
         }
 
@@ -45,7 +45,13 @@
             color: var(--text-color);
         }
 
-        .project-info-image img {
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 4px 0 0 0;
+        }
+        .project-cover-image img {
             width: 100%;
             height: auto;
             display: block;
@@ -115,7 +121,7 @@
                 padding-top: calc(var(--header-height) + 2rem);
             }
 
-            .project-info-text {
+            .project-info-title {
                 padding-right: 0;
             }
 
@@ -156,26 +162,31 @@
             <img src="../assets/images/WildOrchard/energyshot_2.jpg" alt="Wild Orchard Energy Shot" class="project-hero-img">
         </section>
 
-        <!-- Row 1: Text + energyshot_3 -->
+        <!-- Row 1: Title + Description -->
         <section class="project-info">
-            <div class="project-info-text">
+            <div class="project-info-title">
                 <h1 class="project-title">Wild Orchard Energy Shot</h1>
+            </div>
+            <div class="project-info-description">
                 <p class="project-description">
                     Wild Orchard's Calm Focus Shot is an energy shot that concentrates the caffeine equivalent of 8 cups of tea, designed to gently enhance focus and clarity.<br><br>
                     The logo and typeface carry over the design identities established by Mucca Design for Wild Orchard's tea packaging, extended into the energy shot line. Wild Orchard is one of the few companies to have achieved Regenerative Organic Certification. Inspired by Wild Orchard's sun-drenched tea fields, the design uses a gradient to evoke light and optimism, a grain texture reminiscent of matcha particles, and a blue-green color palette to capture the freshness and vitality of an energy shot.<br><br>
-                    <em>*Regenerative Organic Certified® farms and products meet the highest standards in the world for soil health, animal welfare, and farmworker fairness.</em><br><br>
-                    <span class="project-credits">
-                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design, Illustration</span></span>
-                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Packaging</span></span>
-                        <span class="credit-row"><span class="credit-label">Logo</span><span class="credit-value">Mucca</span></span>
-                        <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Mucca</span></span>
-                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">March 2026</span></span>
-                    </span>
+                    <em>*Regenerative Organic Certified® farms and products meet the highest standards in the world for soil health, animal welfare, and farmworker fairness.</em>
                 </p>
+                <span class="project-credits">
+                    <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design, Illustration</span></span>
+                    <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Packaging</span></span>
+                    <span class="credit-row"><span class="credit-label">Logo</span><span class="credit-value">Mucca</span></span>
+                    <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Mucca</span></span>
+                    <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">March 2026</span></span>
+                </span>
             </div>
-            <div class="project-info-image">
-                <img src="../assets/images/WildOrchard/energyshot_3.jpg" alt="Energy Shot Bottle">
-            </div>
+        </section>
+
+        <!-- Cover Image -->
+        <section class="project-cover-image">
+            <div></div>
+            <div><img src="../assets/images/WildOrchard/energyshot_3.jpg" alt="Energy Shot Bottle"></div>
         </section>
 
         <!-- Row 2: energyshot_4 + energyshot_5 side by side -->
