@@ -83,6 +83,29 @@
             display: block;
         }
 
+        .gallery-equal-height {
+            grid-auto-rows: 1fr;
+        }
+
+        .gallery-equal-height .project-gallery-item {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-gallery-half-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-half-right img {
+            grid-column: 2;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .project-gallery-2row {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -212,23 +235,25 @@
             </div>
         </section>
 
-        <!-- Cover Image -->
-        <section class="project-cover-image">
-            <div></div>
-            <div><img src="../assets/images/Music%20Festival%20Branding/tshirts_on_hangers2.jpg" alt="Fun Fun Fun Fest T-shirts"></div>
+        <!-- Row 2: Banners full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/Music%20Festival%20Branding/musicfes1.jpg" alt="Festival Banners">
         </section>
 
-        <!-- Row 2: Banners + FFF Logo -->
-        <section class="project-gallery">
-            <img src="../assets/images/Music%20Festival%20Branding/musicfes1.jpg" alt="Festival Banners" class="project-gallery-item">
-            <img src="../assets/images/Music%20Festival%20Branding/musicfes4.png" alt="FFF Logo" class="project-gallery-item">
+        <!-- Row 3: FFF Logo right-aligned half width -->
+        <section class="project-gallery-half-right">
+            <img src="../assets/images/Music%20Festival%20Branding/musicfes4.png" alt="FFF Logo">
         </section>
 
-        <!-- Row 3-4: Poster + Tickets on left, Lanyards spanning 2 rows on right -->
-        <section class="project-gallery-2row">
-            <img src="../assets/images/Music%20Festival%20Branding/musicfes3.jpg" alt="Festival Poster">
-            <img src="../assets/images/Music%20Festival%20Branding/musicfes6.jpg" alt="Festival Lanyards and Badges" class="span-2-rows">
-            <img src="../assets/images/Music%20Festival%20Branding/musicfes5.jpg" alt="Festival Tickets">
+        <!-- Row 4: Lanyards full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/Music%20Festival%20Branding/musicfes6.jpg" alt="Festival Lanyards and Badges">
+        </section>
+
+        <!-- Row 5: Poster + Tickets side by side (equal height) -->
+        <section class="project-gallery gallery-equal-height">
+            <img src="../assets/images/Music%20Festival%20Branding/musicfes3.jpg" alt="Festival Poster" class="project-gallery-item">
+            <img src="../assets/images/Music%20Festival%20Branding/musicfes5.jpg" alt="Festival Tickets" class="project-gallery-item">
         </section>
 
         <!-- Row 5: T-shirts hanging -->
