@@ -21,21 +21,21 @@
 
         .project-info {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 2rem;
             padding: 2rem 0;
             max-width: 100%;
             align-items: start;
         }
 
-        .project-info-text {
+        .project-info-title {
             padding-right: 2rem;
         }
 
         .project-title {
             font-size: var(--h1-font-size);
             color: var(--title-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             line-height: 1.3;
         }
 
@@ -45,7 +45,13 @@
             color: var(--text-color);
         }
 
-        .project-info-image img {
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 4px 0 0 0;
+        }
+        .project-cover-image img {
             width: 100%;
             height: auto;
             display: block;
@@ -138,7 +144,7 @@
                 padding-top: calc(var(--header-height) + 2rem);
             }
 
-            .project-info-text {
+            .project-info-title {
                 padding-right: 0;
             }
 
@@ -188,23 +194,28 @@
             <img src="../assets/images/Music%20Festival%20Branding/musicfes2.jpg" alt="Fun Fun Fun Fest Stage" class="project-hero-img">
         </section>
 
-        <!-- Row 1: Text + T-shirts -->
+        <!-- Row 1: Title + Description -->
         <section class="project-info">
-            <div class="project-info-text">
+            <div class="project-info-title">
                 <h1 class="project-title">Fun Fun Fun Fest Branding</h1>
+            </div>
+            <div class="project-info-description">
                 <p class="project-description">
-                    Fun Fun Fun Fest is a multi-genre music festival in Austin, Texas, featuring hip-hop, indie rock, punk, and comedy. I created a brand identity centered around a 3D isometric stair typography logo, where the ascending steps visually represent the growing sense of fun and energy that builds throughout the festival. The vibrant gradient colors reflect the festival's diverse, high-energy atmosphere. The system includes festival banners, tickets, lanyards for different access levels, t-shirts, posters, skateboards, and hats.<br><br>
-                    <span class="project-credits">
-                        <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design</span></span>
-                        <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Brand Identity</span></span>
-                        <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Currently Confirming</span></span>
-                        <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">February 2024</span></span>
-                    </span>
+                    Fun Fun Fun Fest is a multi-genre music festival in Austin, Texas, featuring hip-hop, indie rock, punk, and comedy. I created a brand identity centered around a 3D isometric stair typography logo, where the ascending steps visually represent the growing sense of fun and energy that builds throughout the festival. The vibrant gradient colors reflect the festival's diverse, high-energy atmosphere. The system includes festival banners, tickets, lanyards for different access levels, t-shirts, posters, skateboards, and hats.
                 </p>
+                <span class="project-credits">
+                    <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design</span></span>
+                    <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Brand Identity</span></span>
+                    <span class="credit-row"><span class="credit-label">Typefaces</span><span class="credit-value">Currently Confirming</span></span>
+                    <span class="credit-row"><span class="credit-label">Published</span><span class="credit-value">February 2024</span></span>
+                </span>
             </div>
-            <div class="project-info-image">
-                <img src="../assets/images/Music%20Festival%20Branding/tshirts_on_hangers2.jpg" alt="Fun Fun Fun Fest T-shirts">
-            </div>
+        </section>
+
+        <!-- Cover Image -->
+        <section class="project-cover-image">
+            <div></div>
+            <div><img src="../assets/images/Music%20Festival%20Branding/tshirts_on_hangers2.jpg" alt="Fun Fun Fun Fest T-shirts"></div>
         </section>
 
         <!-- Row 2: Banners + FFF Logo -->
