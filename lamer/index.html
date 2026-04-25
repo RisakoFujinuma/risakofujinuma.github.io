@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Mer Revival Typeface Design by Risako Fujinuma">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/favicon/R_icon-02.png">
+    <title>La Mer | Risako Fujinuma</title>
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 2rem 0;
+            max-width: 100%;
+            align-items: start;
+        }
+
+        .project-info-title {
+            padding-right: 2rem;
+        }
+
+        .project-title {
+            font-size: var(--h1-font-size);
+            color: var(--title-color);
+            margin-bottom: 0;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            font-size: 20px;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+
+        .project-credits {
+            display: block;
+            font-size: 16px;
+            margin-top: 2rem;
+        }
+
+        .credit-row {
+            display: flex;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .credit-value {
+            flex: 1;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-full {
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-span2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-quarter {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-quarter .quarter-item {
+            width: 100%;
+            height: auto;
+            display: block;
+            align-self: start;
+        }
+
+        .project-gallery-quarter .quarter-item-fit {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        .project-gallery-span2 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                padding-top: calc(var(--header-height) + 2rem);
+            }
+
+            .project-info-title {
+                padding-right: 0;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav-logo">Risako Fujinuma</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Image -->
+        <section class="project-hero">
+            <img src="../assets/images/LaMer/3LaMer.png" alt="La Mer Typeface" class="project-hero-img">
+        </section>
+
+        <!-- Row 1: Title + Description -->
+        <section class="project-info">
+            <div class="project-info-title">
+                <h1 class="project-title">La Mer</h1>
+            </div>
+            <div class="project-info-description">
+                <p class="project-description">
+                    La Mer is a revival typeface based on Grasset, a font designed by Eug&egrave;ne Grasset during the Belle &Eacute;poque era. I began by searching for books to serve as source material for the revival, identifying the typefaces, and then digitizing them.
+                </p>
+                <span class="project-credits">
+                    <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design</span></span>
+                    <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Typeface Design</span></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- Row 2: 4LaMer 1/2 width, right-aligned -->
+        <section class="project-gallery">
+            <div></div>
+            <img src="../assets/images/LaMer/4LaMer.png" alt="La Mer Typeface Detail" class="project-gallery-item">
+        </section>
+
+        <!-- Row 4: 5LaMer + 6LaMer -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/LaMer/5LaMer.png" alt="La Mer Typeface Detail">
+        </section>
+
+        <!-- Row 5: 7aMer_usecase full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/LaMer/7aMer_usecase.jpg" alt="La Mer Use Case">
+        </section>
+
+        <!-- Row 6: 8Wax_Seal + 9ondine -->
+        <section class="project-gallery">
+            <img src="../assets/images/LaMer/8Wax_Seal_Card_Mockup.png" alt="Wax Seal Card Mockup" class="project-gallery-item">
+            <img src="../assets/images/LaMer/9ondine.png" alt="Ondine" class="project-gallery-item">
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
