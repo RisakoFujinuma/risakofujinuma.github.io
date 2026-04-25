@@ -109,6 +109,26 @@
             padding: 8px 0 0 0;
         }
 
+        .project-gallery-quarter {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-quarter .quarter-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-quarter .quarter-item-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         .project-gallery-span2 img {
             width: 100%;
             height: auto;
@@ -184,10 +204,10 @@
             <img src="../assets/images/LaMer/3LaMer.png" alt="La Mer Typeface">
         </section>
 
-        <!-- Row 3: 4LaMer + 5LaMer -->
-        <section class="project-gallery">
-            <img src="../assets/images/LaMer/4LaMer.png" alt="La Mer Typeface Detail" class="project-gallery-item">
-            <img src="../assets/images/LaMer/5LaMer.png" alt="La Mer Typeface Detail" class="project-gallery-item">
+        <!-- Row 3: 4LaMer + 5LaMer (each 1/4 width, left-aligned) -->
+        <section class="project-gallery-quarter">
+            <img src="../assets/images/LaMer/4LaMer.png" alt="La Mer Typeface Detail" class="quarter-item">
+            <img src="../assets/images/LaMer/5LaMer.png" alt="La Mer Typeface Detail" class="quarter-item-cover">
         </section>
 
         <!-- Row 4: 6LaMer full width -->
