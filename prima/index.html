@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prima Cafe & Bar by Risako Fujinuma">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/favicon/R_icon-02.png">
+    <title>Prima | Risako Fujinuma</title>
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 2rem);
+        }
+
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 2rem 0;
+            max-width: 100%;
+            align-items: start;
+        }
+
+        .project-info-title {
+            padding-right: 2rem;
+        }
+
+        .project-title {
+            font-size: var(--h1-font-size);
+            color: var(--title-color);
+            margin-bottom: 0;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            font-size: 20px;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+
+        .project-credits {
+            display: block;
+            font-size: 16px;
+            margin-top: 2rem;
+        }
+
+        .credit-row {
+            display: flex;
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+
+        .credit-row::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 87px;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .credit-value {
+            flex: 1;
+        }
+
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 8px 0 0 0;
+        }
+
+        .project-cover-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-item {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-full {
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-gallery-span2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            padding: 8px 0 0 0;
+        }
+
+        .project-gallery-span2 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                padding-top: calc(var(--header-height) + 2rem);
+            }
+
+            .project-info-title {
+                padding-right: 0;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav-logo">Risako Fujinuma</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Image -->
+        <section class="project-hero">
+            <img src="../assets/images/Prima/prima1.png" alt="Prima Cafe & Bar" class="project-hero-img">
+        </section>
+
+        <!-- Row 1: Title + Description -->
+        <section class="project-info">
+            <div class="project-info-title">
+                <h1 class="project-title">Prima<br>Cafe & Bar</h1>
+            </div>
+            <div class="project-info-description">
+                <p class="project-description">
+                    Prima is a brand identity designed for a cafe and bar. The logo features a custom inline typeface with a refined, contemporary aesthetic, paired with warm rose tones on a deep burgundy background to evoke sophistication and warmth.
+                </p>
+                <span class="project-credits">
+                    <span class="credit-row"><span class="credit-label">Role</span><span class="credit-value">Design</span></span>
+                    <span class="credit-row"><span class="credit-label">Field</span><span class="credit-value">Brand Identity</span></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- Row 2: prima2 full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/Prima/prima2.jpg" alt="Prima Cafe & Bar Window">
+        </section>
+
+        <!-- Row 3: prima3 + prima4 -->
+        <section class="project-gallery">
+            <img src="../assets/images/Prima/prima3.png" alt="Prima Brand" class="project-gallery-item">
+            <img src="../assets/images/Prima/prima4.jpg" alt="Prima Interior" class="project-gallery-item">
+        </section>
+
+        <!-- Row 4: prima6 + prima5 (swapped) -->
+        <section class="project-gallery">
+            <img src="../assets/images/Prima/prima6.png" alt="Prima Detail" class="project-gallery-item">
+            <img src="../assets/images/Prima/prima5.png" alt="Prima Detail" class="project-gallery-item">
+        </section>
+
+        <!-- Row 5: prima7 + prima8 -->
+        <section class="project-gallery">
+            <img src="../assets/images/Prima/prima7.jpg" alt="Prima Mockup" class="project-gallery-item">
+            <img src="../assets/images/Prima/prima8.jpg" alt="Prima Mockup" class="project-gallery-item">
+        </section>
+
+        <!-- Row 6: prima10 full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/Prima/prima10.png" alt="Prima Detail">
+        </section>
+
+        <!-- Row 7: prima9 + prima11 -->
+        <section class="project-gallery">
+            <img src="../assets/images/Prima/prima9.png" alt="Prima Detail" class="project-gallery-item">
+            <img src="../assets/images/Prima/prima11.png" alt="Prima Brand Overview" class="project-gallery-item">
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
