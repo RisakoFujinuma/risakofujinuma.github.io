@@ -92,6 +92,19 @@
             display: block;
         }
 
+        .project-cover-image {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            padding: 8px 0 0 0;
+        }
+
+        .project-cover-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .project-gallery-full {
             padding: 8px 0 0 0;
         }
@@ -165,13 +178,18 @@
             </div>
         </section>
 
-        <!-- Row 2: Gin_2 + Gin_3 -->
-        <section class="project-gallery">
-            <img src="../assets/images/GinPackaging/Gin_2.JPG" alt="Gin Packaging" class="project-gallery-item">
-            <img src="../assets/images/GinPackaging/Gin_3.JPG" alt="Gin Packaging" class="project-gallery-item">
+        <!-- Row 2: Gin_2 right side -->
+        <section class="project-cover-image">
+            <div></div>
+            <div><img src="../assets/images/GinPackaging/Gin_2.JPG" alt="Gin Packaging"></div>
         </section>
 
-        <!-- Row 3: Gin_4 + Gin_5 -->
+        <!-- Row 3: Gin_3 full width -->
+        <section class="project-gallery-full">
+            <img src="../assets/images/GinPackaging/Gin_3.JPG" alt="Gin Packaging">
+        </section>
+
+        <!-- Row 4: Gin_4 + Gin_5 -->
         <section class="project-gallery">
             <img src="../assets/images/GinPackaging/Gin_4.JPG" alt="Gin Packaging" class="project-gallery-item">
             <img src="../assets/images/GinPackaging/Gin_5.JPG" alt="Gin Packaging" class="project-gallery-item">
