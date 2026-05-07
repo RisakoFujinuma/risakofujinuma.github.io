@@ -105,6 +105,15 @@
             display: block;
         }
 
+        .gallery-equal-height {
+            align-items: stretch;
+        }
+
+        .gallery-equal-height .project-gallery-item {
+            height: 100%;
+            object-fit: cover;
+        }
+
         .project-gallery-full {
             padding: 8px 0 0 0;
         }
@@ -198,8 +207,8 @@
             <img src="../assets/images/Prima/prima2.jpg" alt="Prima Cafe & Bar Window">
         </section>
 
-        <!-- Row 3: prima3 + prima4 -->
-        <section class="project-gallery">
+        <!-- Row 3: prima3 + prima15 -->
+        <section class="project-gallery gallery-equal-height">
             <img src="../assets/images/Prima/prima3.png" alt="Prima Brand" class="project-gallery-item">
             <img src="../assets/images/Prima/prima15.png" alt="Prima Interior" class="project-gallery-item">
         </section>
